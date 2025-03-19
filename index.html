@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/web-logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@iconify/iconify@2.1.1/dist/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen antialiased tracking-wide">
+    <nav class="navbar flex h-20 items-center text-black rounded-lg mx-10">
+        <div class="container flex pr-8 pl-2 justify-between items-center">
+            <!-- Logo Container, vertically aligned -->
+            <div class="w-28 mx-6 h-full flex items-center justify-center">
+                <a href="#">
+                    <img src="./assets/lamar-high-resolution-logo1.png" alt="Logo" class="h-auto max-h-full">
+                </a>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="flex space-x-10 items-center text-md font-bold">
+                <li class="relative group">
+                    <button id="scrollButton1" class="px-4 py-2">
+                        <span class="text-black">About Me</span>
+                        <span class="nav-hover"></span>
+                    </button>
+                </li>
+
+
+
+                </li>
+                <li class="relative group">
+                    <button id="scrollButton2" class="px-4 py-2">
+                        <span class="text-black">My Skills</span>
+                        <span class="nav-hover"></span>
+                    </button>
+
+                </li>
+                <li class="relative group">
+                    <button id="scrollButton3" class="px-4 py-2">
+                        <span class="text-black">Experience</span>
+                        <span class="nav-hover"></span>
+                    </button>
+
+                </li>
+                <li class="relative group">
+                    <button id="scrollButton4" class="px-4 py-2">
+                        <span class="text-black">Testimonials</span>
+                        <span class="nav-hover"></span>
+                    </button>
+
+                </li>
+                <li class="relative group">
+                    <button id="scrollButton5" class="btn-grad px-4 py-2 rounded-md">
+                        <span class="text-white">Contact Me</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- About Me -->
+    <section class="text-black p/y-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h1 id="#" class="about mx-auto antialiased text-3xl md:text-4xl font-semibold mb-4 tracking-wide">
+                About Me</h1>
+            <p class="text-black text-lg font-semibold leading-relaxed max-w-3xl mx-auto">My name is Lamar Cox and I live in
+                Caribbean, in the island of Barbados</p>
+
+        </div>
+    </section>
+
+    <!-- My Skills -->
+    <section class="text-white py-16 min-h-screen bg-bl/ack"
+        style="background: linear-gradient(308deg, rgba(2,0,28,1) 80%, rgb(18, 75, 174) 140%);">
+        <div class="container mx-auto text-center my-24">
+            <h1 id="skills"
+                class="skills text-white mx-auto antialiased text-3xl md:text-4xl font-semibold mb-8 tracking-wide">My
+                Skills</h1>
+            <div class="grid mx-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="card bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <div class="text-blue-500 mb-4">
+                        <!-- SVG Icon -->
+                        <svg class="w-12 h-12 mx-auto fill-orange-500" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2 tracking-wider">HTML</h2>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <div class="text-green-500 mb-4">
+                        <!-- SVG Icon -->
+                        <svg class="w-12 h-12 mx-auto fill-blue-700" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2 tracking-wider">CSS</h2>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <div class="text-red-500 mb-4">
+                        <!-- SVG Icon -->
+                        <svg class="w-12 h-12 mx-auto fill-yellow-500 rounded-xl" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2 tracking-wider">Javascript</h2>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class="relative card bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <div class="absolute font-semibold tracking-widest top-0 right-0 mt-4 mr-4 text-white px-3 py-1 text-sm rounded-2xl"
+                        style="background: linear-gradient(to right, rgb(2, 253, 228) 10%, rgb(107, 45, 242) 65%);">
+                        NEW
+                    </div>
+
+                    <!-- Card Content -->
+                    <div class="text-yellow-500 mb-4">
+                        <!-- SVG Icon -->
+                        <svg class="w-12 h-12 mx-auto fill-blue-500" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 128 128">
+                            <path
+                                d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                                fill="#38bdf8" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2 tracking-wider">Tailwind CSS</h2>
+
+                </div>
+                <!-- Card 5 -->
+                <div class="card bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <div class="text-blue-500 mb-4">
+                        <!-- SVG Icon -->
+                        <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+                            </svg>
+
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2 tracking-wider">Python</h2>
+
+                </div>
+                <!-- Card 6 -->
+                <div class="card bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <div class="text-blue-500 mb-4">
+                        <!-- SVG Icon -->
+                        <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#00549d" fill-rule="evenodd" d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z" clip-rule="evenodd"></path><path fill="#0086d4" fill-rule="evenodd" d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z" clip-rule="evenodd"></path><path fill="#0075c0" fill-rule="evenodd" d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M31 21H33V27H31zM38 21H40V27H38z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M29 23H35V25H29zM36 23H42V25H36z" clip-rule="evenodd"></path>
+                            </svg>
+
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2 tracking-wider">C++</h2>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Experience Section -->
+        <div class="container mx-auto text-center">
+            <h1 class="skills text-white mx-auto antialiased tracking-wide text-3xl md:text-4xl font-semibold mb-8">
+                Experience
+            </h1>
+        </div>
+
+        <div class="h-screen flex items-center -my-28 justify-center">
+            <div class="my-6 mx-auto max-w-2xl p-6">
+                <!-- Item #1 -->
+                <div class="relative pl-8 sm:pl-32 py-6 mb-2 group">
+                    <!-- Purple label -->
+                    <div class="font-caveat font-bold text-2xl text-blue-800 mb-1 sm:mb-0">Caribbean Science Foundation
+                    </div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-32 before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                        <time
+                            class="sm:absolute -mx-14 -my-1.5 -left-12 translate-y-0.5 inline-flex items-center justify-center text-sm font-semibold uppercase w-40 h-10 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-lg">January,
+                            2021</time>
+                        <div class="text-xl font-medium text-slate-400 text-center">Web Development (HTML, CSS,
+                            Javascript)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item #2 -->
+                <div class="relative pl-8 sm:pl-32 py-6 mb-2 group">
+                    <!-- Purple label -->
+                    <div class="font-caveat font-bold text-2xl text-blue-800 mb-1 sm:mb-0">Barbados Community College
+                    </div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-32 before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                        <time
+                            class="sm:absolute -mx-14 -my-1.5 -left-12  translate-y-0.5 inline-flex items-center justify-center text-sm font-semibold uppercase w-40 h-10 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-lg">September,
+                            2022</time>
+                        <div class="text-xl font-medium text-slate-400 text-center">Mobile Web Development (Apache
+                            Cordova)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item #3 -->
+                <div class="relative pl-8 sm:pl-32 py-6 mb-2 group">
+                    <!-- Purple label -->
+                    <div class="font-caveat font-bold text-2xl text-blue-800 mb-1 sm:mb-0">Caribbean Science Foundation
+                    </div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-32 before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                        <time
+                            class="sm:absolute -mx-14 -my-1.5 -left-12 translate-y-0.5 inline-flex items-center justify-center text-sm font-semibold uppercase w-40 h-10 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-lg">January,
+                            2024</time>
+                        <div class="text-xl font-medium text-slate-400 text-center">Web Development (HTML, CSS,
+                            Javascript)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item #4 -->
+                <div class="relative pl-8 sm:pl-32 py-6 mb-2 group">
+                    <!-- Purple label -->
+                    <div class="font-caveat font-bold text-2xl text-blue-800 mb-1 sm:mb-0">1st Job</div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-32 before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                        <time
+                            class="sm:absolute -mx-14 -my-1.5 -left-12 translate-y-0.5 inline-flex items-center justify-center text-sm font-semibold uppercase w-40 h-10 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-lg">September,
+                            2024</time>
+                        <div class="text-xl font-medium text-slate-400 text-center">Lorem, ipsum dolor sit amet
+                            consectetur
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonial-->
+    <div id="testimonial" class="flex items-center justify-center min-h-scre/en">
+        <h1 class="about antialiased text-3xl md:text-4xl font-semibold my-20 tracking-wide">Testimonials</h1>
+    </div>
+
+    <div class="container mx-auto overlay">
+        <main class="text-center text-black p-0">
+            <h1 class="development text-4xl font-bold mb-4 tracking-wide">Under Development</h1>
+            <div id="countdown" class="text-4xl font-semibold space-x-4 my-10" aria-live="polite">
+                <span id="days" class="countdown-item bg-slate-950 text-white px-4 py-2 rounded">00</span> days
+                <span id="hours" class="countdown-item bg-slate-950 text-white px-4 py-2 rounded">00</span> hours
+                <span id="minutes" class="countdown-item bg-slate-950 text-white px-4 py-2 rounded">00</span> minutes
+                <span id="seconds" class="countdown-item bg-slate-950 text-white px-4 py-2 rounded">00</span> seconds
+            </div>
+        </main>
+    </div>
+
+    <!--Contact Me-->
+    <div class="container mx-auto text-center">
+
+        <h1 id="contact" class="skills mx-auto antialiased tracking-wide text-3xl md:text-4xl font-semibold mt-36">
+            Contact Me
+        </h1>
+    </div>
+
+    <div class="isolate bg-white px-6 sm:-py-2 lg:px-8">
+        <form action="https://formspr/ee.io/f/mgvwjoza" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <div>
+                    <label for="first-name"
+                        class="block text-lg tracking-wide fon/t-semibold leading-6 text-gray-900">First
+                        name</label>
+                    <div class="mt-2.5">
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div>
+                    <label for="last-name"
+                        class="block text-lg tracking-wide font/-semibold leading-6 text-gray-900">Last name</label>
+                    <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="email"
+                        class="block text-lg tracking-wide font-/semibold leading-6 text-gray-900">Email</label>
+                    <div class="mt-2.5">
+                        <input type="email" name="email" id="email" autocomplete="email"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message"
+                        class="block text-lg tracking-wide font-/semibold leading-6 text-gray-900">Message</label>
+                    <div class="mt-2.5">
+                        <textarea name="message" id="message" rows="4"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10">
+                <button type="submit"
+                    class="msg-btn block w-full rounded-md  px-3.5 py-2.5 text-center text-sm font-semibold text-white">Let's
+                    talk</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <footer style="background: linear-gradient(308deg, rgba(2,0,28,1) 80%, rgb(18, 75, 174) 140%);"
+        class="bg-gr/ay-900 mt-8">
+        <div class="mx-auto px-10 md:py-4">
+            <!-- <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <div
+                        class="w-28 h-28 bg-[url('https://svgshare.co/m/i/1APW.svg')] bg-no-repeat bg-center bg-contain">
+                    </div>
+                </a>
+                <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#" class="hover:underline hover:text-white me-4 md:me-6">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="hover:underline hover:text-white me-4 md:me-6">My Skills</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="hover:underline hover:text-white me-4 md:me-6">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="hover:underline hover:text-white me-4 md:me-6">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="hover:underline hover:text-white">Contact</a>
+                    </li>
+                </ul>
+            </div> -->
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#"><span
+                        class="text-white">Lamar Cox™</span></a>.
+                All Rights Reserved.</span>
+        </div>
+    </footer>
+</body>
+
+<script src="./js/script.js"></script>
+<!-- JavaScript for Scrolling to Specific Height -->
+<script>
+    //About me
+    const scrollButton1 = document.getElementById('scrollButton1');
+
+    scrollButton1.addEventListener('click', () => {
+        // Scroll to a specific height (in pixels)
+        const scrollHeight1 = 0; // Change this to the desired height
+        window.scrollTo({
+            top: scrollHeight1,
+            behavior: 'smooth'
+        });
+    });
+
+    //My Skills
+    const scrollButton2 = document.getElementById('scrollButton2');
+
+    scrollButton2.addEventListener('click', () => {
+        // Scroll to a specific height (in pixels)
+        const scrollHeight2 = 370; // Change this to the desired height
+        window.scrollTo({
+            top: scrollHeight2,
+            behavior: 'smooth'
+        });
+    });
+
+    //Experience
+    const scrollButton3 = document.getElementById('scrollButton3');
+
+    scrollButton3.addEventListener('click', () => {
+        // Scroll to a specific height (in pixels)
+        const scrollHeight3 = 880; // Change this to the desired height
+        window.scrollTo({
+            top: scrollHeight3,
+            behavior: 'smooth'
+        });
+    });
+
+    //Testimonials
+    const scrollButton4 = document.getElementById('scrollButton4');
+
+    scrollButton4.addEventListener('click', () => {
+        // Scroll to a specific height (in pixels)
+        const scrollHeight4 = 1550; // Change this to the desired height
+        window.scrollTo({
+            top: scrollHeight4,
+            behavior: 'smooth'
+        });
+    });
+
+    //Contact Us
+    const scrollButton5 = document.getElementById('scrollButton5');
+
+    scrollButton5.addEventListener('click', () => {
+        // Scroll to a specific height (in pixels)
+        const scrollHeight5 = 1960; // Change this to the desired height
+        window.scrollTo({
+            top: scrollHeight5,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</html>
